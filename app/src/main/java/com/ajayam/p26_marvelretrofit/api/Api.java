@@ -1,4 +1,6 @@
-package com.ajayam.p26_marvelretrofit;
+package com.ajayam.p26_marvelretrofit.api;
+
+import com.ajayam.p26_marvelretrofit.model.Results;
 
 import java.util.List;
 

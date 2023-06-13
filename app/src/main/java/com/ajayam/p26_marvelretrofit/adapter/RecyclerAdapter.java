@@ -1,4 +1,4 @@
-package com.ajayam.p26_marvelretrofit;
+package com.ajayam.p26_marvelretrofit.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,9 +10,10 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.ajayam.p26_marvelretrofit.R;
+import com.ajayam.p26_marvelretrofit.model.Results;
 import com.bumptech.glide.Glide;
 
-import java.net.CookieHandler;
 import java.util.List;
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHolder> {

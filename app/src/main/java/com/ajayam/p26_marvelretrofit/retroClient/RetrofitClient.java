@@ -1,4 +1,6 @@
-package com.ajayam.p26_marvelretrofit;
+package com.ajayam.p26_marvelretrofit.retroClient;
+
+import com.ajayam.p26_marvelretrofit.api.Api;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;

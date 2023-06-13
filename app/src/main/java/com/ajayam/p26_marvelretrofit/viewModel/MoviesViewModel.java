@@ -1,9 +1,13 @@
-package com.ajayam.p26_marvelretrofit;
+package com.ajayam.p26_marvelretrofit.viewModel;
 
 import android.util.Log;
 
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
+
+import com.ajayam.p26_marvelretrofit.api.Api;
+import com.ajayam.p26_marvelretrofit.retroClient.RetrofitClient;
+import com.ajayam.p26_marvelretrofit.model.Results;
 
 import java.util.List;
 
