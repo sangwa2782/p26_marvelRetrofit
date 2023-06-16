@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#9CE1DA"
+    tools:context=".activity.HomeActivity">
+
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/btn1"-->
+<!--        android:text="Get 5 Movie Details"-->
+<!--        android:paddingHorizontal="30dp"/>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A1E1EA"
+        android:id="@+id/tmdbrecylerView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/noreplyfound"
+        android:text="No Record Found Yet"
+        android:textStyle="bold"
+        android:textColor="#DC6A6A"
+        android:textSize="24sp"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

@@ -24,10 +24,10 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
         this.result = result;
     }
 
-    public void updatemovielist(List<Results> list) {
-        this.result = list;
-        notifyDataSetChanged();
-    }
+//    public void updatemovielist(List<Results> list) {
+//        this.result = list;
+//        notifyDataSetChanged();
+//    }
 
     @NonNull
     @Override
@@ -40,16 +40,14 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.Name.setText(result.get(position).getName());
-//        holder.Image.setImageResource(result.get(position).getImageurl());
-
         Glide.with(context)
                 .load(result.get(position).getImageurl())
                 .into(holder.Image);
 
         holder.Bio.setText(result.get(position).getBio());
-        holder.Publisher.setText(result.get(position).getPublisher());
-        holder.CreatedBy.setText(result.get(position).getCreatedby());
-        holder.Team.setText(result.get(position).getTeam());
+        holder.Publisher.setText("Publisher : "+result.get(position).getPublisher());
+        holder.CreatedBy.setText("Created by : "+result.get(position).getCreatedby());
+        holder.Team.setText("Team : "+result.get(position).getTeam());
     }
 
     @Override
